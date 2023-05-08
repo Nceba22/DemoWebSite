@@ -1,0 +1,11 @@
+{% for item in item_list %}
+   <ul>
+    <li>
+
+       <a href="{% url 'foodApp:detail' item.id %}" > {{ item.id }} >> {{ item.item_name }}
+
+    </li>
+   </ul>
+    
+
+{% endfor %}
